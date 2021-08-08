@@ -170,6 +170,30 @@ html, body { font-size: 16px; line-height: 1.5em; font-family: "Poppins", Helvet
 
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus { box-shadow: none; }
 
+.btn-klien { color: #FFF; background-color: #F23C13; border-color: #F23C13; }
+
+.btn-klien:hover { color: #FFF; background-color: #c72e0b; border-color: #c72e0b; }
+
+.btn-klien:focus, .btn-klien.focus { color: #fff; background-color: #c72e0b; border-color: #c72e0b; box-shadow: none; }
+
+.btn-klien.disabled, .btn-klien:disabled { color: #FFF; background-color: #F23C13; border-color: #F23C13; }
+
+.btn-klien:not(:disabled):not(.disabled):active, .btn-klien:not(:disabled):not(.disabled).active, .show > .btn-klien.dropdown-toggle { color: #fff; background-color: #c72e0b; border-color: #c72e0b; }
+
+.btn-klien:not(:disabled):not(.disabled).active:focus, .btn-klien:not(:disabled):not(.disabled):active:focus, .show > .btn-klien.dropdown-toggle:focus { box-shadow: none; }
+
+.btn-talenta { color: #FFF; background-color: #F02784; border-color: #F02784; }
+
+.btn-talenta:hover { color: #FFF; background-color: #d50f6b; border-color: #d50f6b; }
+
+.btn-talenta:focus, .btn-talenta.focus { color: #fff; background-color: #d50f6b; border-color: #d50f6b; box-shadow: none; }
+
+.btn-talenta.disabled, .btn-talenta:disabled { color: #FFF; background-color: #F02784; border-color: #F02784; }
+
+.btn-talenta:not(:disabled):not(.disabled):active, .btn-talenta:not(:disabled):not(.disabled).active, .show > .btn-talenta.dropdown-toggle { color: #fff; background-color: #d50f6b; border-color: #d50f6b; }
+
+.btn-talenta:not(:disabled):not(.disabled).active:focus, .btn-talenta:not(:disabled):not(.disabled):active:focus, .show > .btn-talenta.dropdown-toggle:focus { box-shadow: none; }
+
 .btn-black { color: #FFF; background-color: #000; border-color: #000; }
 
 .btn-black:hover { color: #FFF; background-color: black; border-color: black; }
@@ -242,6 +266,14 @@ html, body { font-size: 16px; line-height: 1.5em; font-family: "Poppins", Helvet
 /* Form */
 /* ------------------------------------------------------------------------------------------------ */
 .form-control { height: 40px; }
+
+.form-control::-webkit-input-placeholder { color: #A8A8A8; }
+
+.form-control::-moz-placeholder { color: #A8A8A8; }
+
+.form-control:-ms-input-placeholder { color: #A8A8A8; }
+
+.form-control::placeholder { color: #A8A8A8; }
 
 /* ------------------------------------------------------------------------------------------------ */
 /* Header */
@@ -562,77 +594,105 @@ html, body { font-size: 16px; line-height: 1.5em; font-family: "Poppins", Helvet
 
 .block-journey__slider-nav ul li:hover img.color, .block-journey__slider-nav ul li.active img.color { display: block; }
 
-.login-page { height: 100vh; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; background: #64F4A3; }
+.login-page, .signup-page { height: 100vh; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; background: #64F4A3; }
 
-.login-page--klien { background: #F2785C; }
+.login-page__type, .signup-page__type { max-width: 340px; margin: 0 auto; }
 
-.login-page--talenta { background: #F26FAC; }
+.login-page__type .title, .signup-page__type .title { font-size: 34px; line-height: 1.5em; text-align: center; margin-bottom: 48px; }
 
-.login-page__type { max-width: 340px; margin: 0 auto; }
+.login-page__type .btn-box, .signup-page__type .btn-box { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; text-align: center; width: 100%; }
 
-.login-page__type .title { font-size: 34px; line-height: 1.5em; text-align: center; margin-bottom: 48px; }
+.login-page__type .btn-box span, .signup-page__type .btn-box span { display: block; margin-bottom: 24px; }
 
-.login-page__type .btn-box { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; text-align: center; width: 100%; }
+.login-page__type .btn-box .btn, .signup-page__type .btn-box .btn { width: 190px; border-radius: 8px; padding: 12px; }
 
-.login-page__type .btn-box span { display: block; margin-bottom: 24px; }
+.login-page__type .btn-box .btn img, .signup-page__type .btn-box .btn img { display: block; height: 14px; width: auto; margin: 0 auto; }
 
-.login-page__type .btn-box .btn { width: 190px; border-radius: 8px; padding: 12px; }
+.login-page__type .btn-box .btn .img-w, .signup-page__type .btn-box .btn .img-w { display: none; }
 
-.login-page__type .btn-box .btn img { display: block; height: 14px; width: auto; margin: 0 auto; }
+.login-page__type .btn-box .btn + .btn, .signup-page__type .btn-box .btn + .btn { margin-top: 24px; }
 
-.login-page__type .btn-box .btn .img-w { display: none; }
+.login-page__type .btn-box .btn:hover img, .signup-page__type .btn-box .btn:hover img { display: none; }
 
-.login-page__type .btn-box .btn + .btn { margin-top: 24px; }
+.login-page__type .btn-box .btn:hover .img-w, .signup-page__type .btn-box .btn:hover .img-w { display: block; }
 
-.login-page__type .btn-box .btn:hover img { display: none; }
+.login-page__type .btn-box .btn-klien, .signup-page__type .btn-box .btn-klien { border: 1px solid #F73824; }
 
-.login-page__type .btn-box .btn:hover .img-w { display: block; }
+.login-page__type .btn-box .btn-klien:hover, .signup-page__type .btn-box .btn-klien:hover { background: #F73824; }
 
-.login-page__type .btn-box .btn-klien { border: 1px solid #F73824; }
+.login-page__type .btn-box .btn-talenta, .signup-page__type .btn-box .btn-talenta { border: 1px solid #F02784; }
 
-.login-page__type .btn-box .btn-klien:hover { background: #F73824; }
+.login-page__type .btn-box .btn-talenta:hover, .signup-page__type .btn-box .btn-talenta:hover { background: #F02784; }
 
-.login-page__type .btn-box .btn-talenta { border: 1px solid #F02784; }
+.login-page__type .login-cta, .signup-page__type .login-cta { text-align: center; margin-top: 80px; font-size: 14px; line-height: 1.5em; }
 
-.login-page__type .btn-box .btn-talenta:hover { background: #F02784; }
+.login-page__form, .signup-page__form { width: 100%; max-width: 310px; margin: 0 auto; -webkit-align-self: flex-start; -ms-flex-item-align: start; align-self: flex-start; }
 
-.login-page__type .login-cta { text-align: center; margin-top: 80px; font-size: 14px; line-height: 1.5em; }
+.login-page__form .title, .signup-page__form .title { font-size: 22px; line-height: 1.5em; margin-bottom: 32px; text-align: center; }
 
-.login-page__form { max-width: 310px; margin: 0 auto; -webkit-align-self: flex-start; -ms-flex-item-align: start; align-self: flex-start; }
+.login-page__form .form-group, .signup-page__form .form-group { margin-bottom: 24px; }
 
-.login-page__form .title { font-size: 22px; line-height: 1.5em; margin-bottom: 32px; text-align: center; }
+.login-page__form .form-action span.or, .login-page__form .form-action span.forgot, .signup-page__form .form-action span.or, .signup-page__form .form-action span.forgot { display: block; font-size: 12px; line-height: 1.5em; padding: 12px; text-align: center; }
 
-.login-page__form .form-group { margin-bottom: 24px; }
+.login-page__form .form-action .btn, .signup-page__form .form-action .btn { font-size: 14px; }
 
-.login-page__form .form-action span.or, .login-page__form .form-action span.forgot { display: block; font-size: 12px; line-height: 1.5em; padding: 12px; text-align: center; }
+.login-page__form label, .signup-page__form label { color: #000; font-size: 12px; line-height: 1.5em; margin-bottom: 6px; font-weight: 500; }
 
-.login-page__form .form-action .btn { font-size: 14px; }
+.login-page__form .form-control, .signup-page__form .form-control { font-size: 14px; line-height: 24px; border: 0; background: #F6F6F6; }
 
-.login-page__form label { color: #000; font-size: 12px; line-height: 1.5em; margin-bottom: 6px; }
+.login-page__form .form-control::-webkit-input-placeholder, .signup-page__form .form-control::-webkit-input-placeholder { color: #D0D0D0; }
 
-.login-page__form .form-control { border: 0; background: #F6F6F6; }
+.login-page__form .form-control::-moz-placeholder, .signup-page__form .form-control::-moz-placeholder { color: #D0D0D0; }
 
-.login-page__form .login-cta { text-align: center; margin-top: 40px; font-size: 14px; line-height: 1.5em; }
+.login-page__form .form-control:-ms-input-placeholder, .signup-page__form .form-control:-ms-input-placeholder { color: #D0D0D0; }
 
-.login-page__img img { display: block; height: 580px; width: 580px; }
+.login-page__form .form-control::placeholder, .signup-page__form .form-control::placeholder { color: #D0D0D0; }
 
-.login-page__wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; position: relative; -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch; }
+.login-page__form .login-cta, .signup-page__form .login-cta { text-align: center; margin-top: 40px; font-size: 14px; line-height: 1.5em; }
 
-.login-page__left { z-index: 2; position: relative; display: block; width: 580px; }
+.login-page__img, .signup-page__img { position: relative; display: -webkit-flex; display: -ms-flexbox; display: flex; height: 100%; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
-.login-page__right { z-index: 1; position: relative; background: #FFF; margin-left: -30px; border-radius: 0 30px 30px 0; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; padding: 64px 40px 40px 70px; width: calc(100% - 550px); }
+.login-page__img:before, .signup-page__img:before { z-index: 1; content: ""; display: block; width: 95%; height: 100%; position: absolute; top: 0; right: 0; background: #1CEA6F; border-radius: 30px; }
 
-.login-page__right .back { display: block; position: absolute; top: 30px; left: 60px; cursor: pointer; opacity: 1; transition: all .3s ease; }
+.login-page__img img, .signup-page__img img { position: relative; z-index: 2; display: block; height: auto; width: 100%; }
 
-.login-page__right .back img { display: block; width: 24px; height: 24px; }
+.login-page__wrap, .signup-page__wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; position: relative; -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch; }
 
-.login-page__right .back:hover { opacity: 0.5; }
+.login-page__left, .signup-page__left { z-index: 2; position: relative; display: block; width: 580px; }
 
-.login-page__right .close { display: block; position: absolute; top: 30px; right: 30px; cursor: pointer; opacity: 1; transition: all .3s ease; }
+.login-page__right, .signup-page__right { z-index: 1; position: relative; background: #FFF; margin-left: -30px; border-radius: 0 30px 30px 0; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; padding: 64px 40px 40px 70px; width: calc(100% - 550px); }
 
-.login-page__right .close img { display: block; width: 15px; height: 15px; }
+.login-page__right .back, .signup-page__right .back { display: block; position: absolute; top: 30px; left: 60px; cursor: pointer; opacity: 1; transition: all .3s ease; }
 
-.login-page__right .close:hover { opacity: 0.5; }
+.login-page__right .back img, .signup-page__right .back img { display: block; width: 24px; height: 24px; }
+
+.login-page__right .back:hover, .signup-page__right .back:hover { opacity: 0.5; }
+
+.login-page__right .close, .signup-page__right .close { display: block; position: absolute; top: 30px; right: 30px; cursor: pointer; opacity: 1; transition: all .3s ease; }
+
+.login-page__right .close img, .signup-page__right .close img { display: block; width: 15px; height: 15px; }
+
+.login-page__right .close:hover, .signup-page__right .close:hover { opacity: 0.5; }
+
+.login-page--klien, .signup-page--klien { background: #F2785C; }
+
+.login-page--klien .login-page__img:before, .login-page--klien .signup-page__img:before, .signup-page--klien .login-page__img:before, .signup-page--klien .signup-page__img:before { background: #F23C13; }
+
+.login-page--talenta, .signup-page--talenta { background: #F26FAC; }
+
+.login-page--talenta .login-page__img:before, .login-page--talenta .signup-page__img:before, .signup-page--talenta .login-page__img:before, .signup-page--talenta .signup-page__img:before { background: #F02784; }
+
+.signup-page__right { padding: 50px 40px 40px 70px; }
+
+.signup-page__form { max-width: 440px; }
+
+.signup-page__form .title { margin-bottom: 12px; }
+
+.signup-page__form .form-group { margin-bottom: 10px; }
+
+.signup-page__form .form-action { padding-top: 10px; }
+
+.signup-page__form .login-cta { margin-top: 16px; }
 
 .block-cta { position: relative; z-index: 1; padding-top: 42px; padding-bottom: 42px; background: #F6F6F6; border-radius: 30px 30px 0 0; margin-top: 80px; }
 
