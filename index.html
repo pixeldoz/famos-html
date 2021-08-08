@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <meta name="theme-color" content="#4C9F70"/>
+    <title>FAMOS</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <style type="text/css">
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5vh 0 10vh;
+      }
+      #wrap { 
+        width: 100%;
+      }
+      header {
+        padding: 30px 0 25px;
+        text-align: center
+      }
+      main {
+        padding-top: 0
+      }
+      .title {
+        display: block;
+        font-size: 10px;
+        line-height: 20px;
+        font-weight: 500;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        margin: 0 0 15px;
+      }
+      .logo {
+        width: 220px;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+      }
+      .logo img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto
+      }
+      .page-list {
+        max-width: 280px;
+        margin: 0 auto;
+        box-shadow: 0 0 3px 0 rgba(0,0,0,.25);
+        overflow: hidden;
+        border-radius: 3px;
+      }
+      .page-list-item { 
+        display: block;
+        margin: 0;
+        padding: 0;
+        background: #FFF;
+        border-bottom: 1px solid #e2e2e2;
+      }
+      .page-list-item-sub { 
+        display: block;
+        transform: rotateX(90deg);
+        transform-origin: top;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        transition: all 0.4s ease 0s;
+      }
+      .page-list-item-sub .page-list-link {
+        padding-left: 24px;
+      }
+      .has-sub.show .page-list-item-sub{
+        transform: rotateX(0);
+        opacity: 1;
+        visibility: visible;
+        max-height: max-content;
+      }
+      .page-list-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 10px 20px;
+        color: #555;
+        font-size: 14px;
+        line-height: 1.5em;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        cursor: pointer;
+        transition: all 0.4s ease 0s;
+      }
+      .page-list-link:hover {
+        background: #00E97F;
+        color: #000;
+        letter-spacing: 2px;
+        text-decoration: none;
+        transition: all 0.4s ease 0s;
+      }
+      
+    </style>
+    <body class="load-page">
+      <div id="wrap">
+        <header>
+          <div class="title">Page Template</div><a class="logo" id="logo" href="home.html" target="_blank"><img src="images/logo-famos.png"/></a>
+        </header>
+        <main>
+          <div class="container">
+            <div class="page-list">
+              <div class="page-list-item has-sub"><span class="page-list-link"> <span>Login</span></span>
+                <div class="page-list-item-sub"><a class="page-list-link" href="login.html" target="_blank"> <span>Login - Index</span></a><a class="page-list-link" href="login-klien.html" target="_blank"> <span>Login - Klien</span></a><a class="page-list-link" href="login-talenta.html" target="_blank"> <span>Login - Talenta</span></a></div>
+              </div>
+              <div class="page-list-item"><a class="page-list-link" href="home.html" target="_blank"> <span>Beranda</span></a></div>
+              <div class="page-list-item"><a class="page-list-link" href="about.html" target="_blank"> <span>Tentang</span></a></div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </body>
+    <script src="plugins/jquery/jquery-3.4.1.min.js"></script>
+    <script>
+      $( document ).ready(function() {
+        $('.has-sub').click(function(){
+          $(this).toggleClass('show');
+        });
+      });
+    </script>
+  </head>
+</html>
