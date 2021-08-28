@@ -152,6 +152,8 @@ html, body { font-size: 16px; line-height: 1.5em; font-family: "Poppins", Helvet
 /* ------------------------------------------------------------------------------------------------ */
 /* General */
 /* ------------------------------------------------------------------------------------------------ */
+.page-transition { position: fixed; left: 0%; top: 0%; right: 0%; bottom: 0%; z-index: 99999999; display: block; width: 100vw; height: 100vw; background-color: #FFF; }
+
 main { overflow: hidden; }
 
 @media (max-width: 991px) { .container { padding-left: 32px; padding-right: 32px; } }
@@ -603,6 +605,12 @@ select.select-control { height: 40px; border: 1px solid #e5e5e5; border-radius: 
 
 .masthead--home .masthead__content.active .masthead__action .alt-2 { display: block; }
 
+.masthead--home .slider__item { position: relative; transition: all .3s ease; }
+
+.masthead--home .slider__item.animate-left { -webkit-transform: translateX(-15px); transform: translateX(-15px); }
+
+.masthead--home .slider__item.animate-right { -webkit-transform: translateX(15px); transform: translateX(15px); }
+
 .masthead--about { position: relative; }
 
 .masthead--about:before { content: ""; display: block; width: 100%; height: 50%; position: absolute; bottom: 0; left: 0; background: #F6F6F6; border-radius: 30px 30px 0 0; }
@@ -959,7 +967,15 @@ select.select-control { height: 40px; border: 1px solid #e5e5e5; border-radius: 
   .block-journey__slider .item__desc p { font-size: 14px; line-height: 20px; }
   .block-journey__slider-nav ul { border-radius: 12px; }
   .block-journey__slider-nav ul li { margin: 0 2.5%; }
-  .block-journey__slider-nav ul li:before { width: 100%; } }
+  .block-journey__slider-nav ul li:before { width: 100%; }
+  .block-journey .owl-nav button.owl-prev { left: -30px; }
+  .block-journey .owl-nav button.owl-prev span { display: block; width: 30px; height: 30px; background: url("../images/ic-chevron-left-w.svg"); border: 0 !important; box-shadow: none !important; }
+  .block-journey .owl-nav button.owl-prev img { display: none; }
+  .block-journey .owl-nav button.owl-prev.disabled { display: none; }
+  .block-journey .owl-nav button.owl-next { right: -30px; }
+  .block-journey .owl-nav button.owl-next span { display: block; width: 30px; height: 30px; background: url("../images/ic-chevron-right-w.svg"); border: 0 !important; box-shadow: none !important; }
+  .block-journey .owl-nav button.owl-next img { display: none; }
+  .block-journey .owl-nav button.owl-next.disabled { display: none; } }
 
 .block-feature { background: #1CEA6F; border-radius: 30px 30px 0 0; margin-top: 80px; padding-top: 80px; padding-bottom: 16px; color: #FFF; }
 
