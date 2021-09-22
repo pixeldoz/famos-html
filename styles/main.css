@@ -350,9 +350,11 @@ main { overflow: hidden; }
 
 .accordion > .card.open:before { top: 0; opacity: 1; transition-delay: .1s; }
 
+.accordion > .card.open .card-header .chevron { top: calc(50% - 0px); }
+
 .accordion > .card > .card-header { position: relative; z-index: 2; color: #BFBFBF; cursor: pointer; border-radius: 30px; border: 0; background: transparent; padding: 32px 90px 32px 32px; font-size: 18px; line-height: 1.5em; font-weight: 500; transition: all .3s ease .2s; margin: 0; }
 
-.accordion > .card > .card-header .chevron { position: absolute; right: 32px; display: block; width: 16px; top: calc(50% - 12px); -webkit-transform: none; transform: none; transition: all .3s ease; }
+.accordion > .card > .card-header .chevron { position: absolute; right: 32px; display: block; width: 16px; top: calc(50% - 8px); -webkit-transform: none; transform: none; transition: all .3s ease; }
 
 .accordion > .card > .card-header .chevron .svg { display: block; width: 16px; height: 16px; }
 
@@ -744,7 +746,7 @@ select.select-control { height: 40px; border: 1px solid #e5e5e5; border-radius: 
 
 .block-featured__action { text-align: center; }
 
-.block-featured__items { padding-top: 80px; }
+.block-featured__items { padding-top: 160px; }
 
 .block-featured__items .row { margin-left: -8px; margin-right: -8px; }
 
@@ -1015,7 +1017,7 @@ select.select-control { height: 40px; border: 1px solid #e5e5e5; border-radius: 
 
 .block-journey__slider.owl-grab .owl-item .item { -webkit-transform: none !important; }
 
-.block-journey__slider-nav { max-width: 536px; margin: 32px auto 0; }
+.block-journey__slider-nav { max-width: 536px; margin: 32px auto 0; display: none; }
 
 .block-journey__slider-nav ul { display: block; text-align: center; background: #FFF; border-radius: 18px; font-size: 0; line-height: 0; padding: 4px 0; }
 
