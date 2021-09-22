@@ -1428,6 +1428,30 @@ select.select-control { height: 40px; border: 1px solid #e5e5e5; border-radius: 
 @media (max-width: 991px) { .block-cta { margin-top: 48px; }
   .block-cta__title { font-size: 14px; line-height: 1.5em; font-weight: 500; text-align: center; margin-bottom: 20px; } }
 
+.page-underconstruction { min-height: 100vh; }
+
+.page-underconstruction .container { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; min-height: 100vh; }
+
+.page-underconstruction__img { max-width: 529px; max-height: 300px; margin: 0 auto 62px; }
+
+.page-underconstruction__text { margin-bottom: 32px; text-align: center; }
+
+.page-underconstruction__text h1 { font-size: 34px; line-height: 44px; margin-bottom: 8px; }
+
+.page-underconstruction__sosmed { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: 80px; }
+
+.page-underconstruction__sosmed a { color: #000000; font-weight: 600; }
+
+.page-underconstruction__sosmed a .icon { width: 24px; height: 24px; display: inline-block; vertical-align: middle; margin-right: 10px; }
+
+.page-underconstruction__sosmed a span { display: inline-block; vertical-align: middle; }
+
+.page-underconstruction__sosmed a + a { margin-left: 30px; }
+
+@media (max-width: 991px) { .page-underconstruction__text h1 { font-size: 24px; line-height: 1.5em; }
+  .page-underconstruction__sosmed { margin-bottom: 40px; }
+  .page-underconstruction__sosmed a + a { margin-top: 24px; margin-left: 0; } }
+
 /* ------------------------------------------------------------------------------------------------ */
 /* Responsive */
 /* ------------------------------------------------------------------------------------------------ */
